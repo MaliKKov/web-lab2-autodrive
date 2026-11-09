@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог автомобильных товаров магазина AutoDrive.">
+    <title>Каталог — AutoDrive</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                AUTO<span>DRIVE</span>
+            </a>
+
+            <form class="search-form" action="catalog.html" method="get" role="search">
+                <input type="search" name="q"
+                       placeholder="Поиск товаров..."
+                       aria-label="Поиск товаров">
+                <button type="submit">Найти</button>
+            </form>
+
+            <a class="cart-link" href="cart.html">🛒 Корзина</a>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+        <div class="container nav-content">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html" class="active">Каталог</a>
+            <a href="product.html">Товар</a>
+            <a href="cart.html">Корзина</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+    </nav>
+
+    <main class="container catalog-page">
+
+        <section class="catalog-header">
+            <h1>Каталог автотоваров</h1>
+            <p>
+                Выбирайте автомобильные запчасти,
+                инструменты и аксессуары.
+            </p>
+        </section>
+
+        <div class="catalog-layout">
+
+            <aside class="catalog-sidebar">
+                <h2>Категории</h2>
+
+                <ul class="category-list">
+                    <li><a href="catalog.html">Все товары</a></li>
+                    <li><a href="catalog.html#parts">Запчасти</a></li>
+                    <li><a href="catalog.html#oils">Масла</a></li>
+                    <li><a href="catalog.html#tools">Инструменты</a></li>
+                    <li><a href="catalog.html#accessories">Аксессуары</a></li>
+                </ul>
+
+                <div class="sidebar-info">
+                    <h3>AutoDrive</h3>
+                    <p>
+                        Автомобильные товары для ухода,
+                        обслуживания и ремонта.
+                    </p>
+                </div>
+            </aside>
+
+            <div class="catalog-content">
+                <div class="catalog-toolbar">
+                    <p>Найдено товаров: <strong>8</strong></p>
+
+                    <div class="sort-box">
+                        <label for="sort">Сортировка:</label>
+                        <select id="sort" name="sort">
+                            <option>По популярности</option>
+                            <option>Сначала дешёвые</option>
+                            <option>Сначала дорогие</option>
+                            <option>По названию</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="product-grid catalog-products">
+
+                    <article class="product-card" id="parts">
+                        <div class="product-picture">🔋</div>
+                        <div class="product-info">
+                            <span class="product-category">Электрика</span>
+                            <h3>Автомобильный аккумулятор</h3>
+                            <p class="price">6 990 ₽</p>
+                            <a href="product.html" class="product-button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" id="oils">
+                        <div class="product-picture">🛢️</div>
+                        <div class="product-info">
+                            <span class="product-category">Масла</span>
+                            <h3>Моторное масло 5W-30</h3>
+                            <p class="price">3 490 ₽</p>
+                            <a href="product.html" class="product-button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" id="tools">
+                        <div class="product-picture">🧰</div>
+                        <div class="product-info">
+                            <span class="product-category">Инструменты</span>
+                            <h3>Набор инструментов</h3>
+                            <p class="price">4 290 ₽</p>
+                            <a href="product.html" class="product-button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card" id="accessories">
+                        <div class="product-picture">💡</div>
+                        <div class="product-info">
+                            <span class="product-category">Освещение</span>
+                            <h3>Автомобильные LED-лампы</h3>
+                            <p class="price">1 890 ₽</p>
+                            <a href="product.html" class="product-button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-picture">🛞</div>
+                        <div class="product-info">
+                            <span class="product-category">Шины</span>
+                            <h3>Летняя автомобильная шина</h3>
+                            <p class="price">5 290 ₽</p>
+                            <a href="product.html" class="product-button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-picture">🧽</div>
+                        <div class="product-info">
+                            <span class="product-category">Автокосметика</span>
+                            <h3>Набор для мойки автомобиля</h3>
+                            <p class="price">1 590 ₽</p>
+                            <a href="product.html" class="product-button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-picture">🔧</div>
+                        <div class="product-info">
+                            <span class="product-category">Инструменты</span>
+                            <h3>Гаечный ключ универсальный</h3>
+                            <p class="price">890 ₽</p>
+                            <a href="product.html" class="product-button">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-picture">🚗</div>
+                        <div class="product-info">
+                            <span class="product-category">Аксессуары</span>
+                            <h3>Автомобильный органайзер</h3>
+                            <p class="price">1 290 ₽</p>
+                            <a href="product.html" class="product-button">Подробнее</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+            </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 AutoDrive. Учебный интернет-магазин.</p>
+            <small>Лабораторная работа №2 — WEB-программирование</small>
+        </div>
+    </footer>
+
+</body>
+</html>

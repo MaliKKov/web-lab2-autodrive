@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AutoDrive — интернет-магазин автомобильных товаров и аксессуаров.">
+    <title>AutoDrive — Автомагазин</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                AUTO<span>DRIVE</span>
+            </a>
+
+            <form class="search-form" action="catalog.html" method="get" role="search">
+                <input type="search" name="q"
+                       placeholder="Поиск товаров..."
+                       aria-label="Поиск товаров">
+                <button type="submit">Найти</button>
+            </form>
+
+            <a class="cart-link" href="cart.html">🛒 Корзина</a>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+        <div class="container nav-content">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="product.html">Товар</a>
+            <a href="cart.html">Корзина</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <p class="hero-label">Всё для вашего автомобиля</p>
+                <h1>Автотовары на любой случай</h1>
+                <p>
+                    Запчасти, аксессуары, инструменты
+                    и товары для ухода за автомобилем.
+                </p>
+                <a href="catalog.html" class="primary-button">
+                    Смотреть каталог
+                </a>
+            </div>
+        </section>
+
+        <section class="container section-block">
+            <h2>Категории товаров</h2>
+
+            <div class="category-grid">
+                <a href="catalog.html" class="category-card">
+                    <span class="category-icon">⚙️</span>
+                    <h3>Запчасти</h3>
+                    <p>Детали и комплектующие</p>
+                </a>
+
+                <a href="catalog.html" class="category-card">
+                    <span class="category-icon">🛞</span>
+                    <h3>Шины и диски</h3>
+                    <p>Для разных автомобилей</p>
+                </a>
+
+                <a href="catalog.html" class="category-card">
+                    <span class="category-icon">🔧</span>
+                    <h3>Инструменты</h3>
+                    <p>Для обслуживания и ремонта</p>
+                </a>
+
+                <a href="catalog.html" class="category-card">
+                    <span class="category-icon">🧽</span>
+                    <h3>Автокосметика</h3>
+                    <p>Для чистоты и ухода</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="container section-block">
+            <div class="section-heading">
+                <h2>Популярные товары</h2>
+                <a href="catalog.html">Весь каталог</a>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-picture">🔋</div>
+                    <div class="product-info">
+                        <span class="product-category">Электрика</span>
+                        <h3>Автомобильный аккумулятор</h3>
+                        <p class="price">6 990 ₽</p>
+                        <a href="product.html" class="product-button">
+                            Подробнее
+                        </a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-picture">🛢️</div>
+                    <div class="product-info">
+                        <span class="product-category">Масла</span>
+                        <h3>Моторное масло 5W-30</h3>
+                        <p class="price">3 490 ₽</p>
+                        <a href="product.html" class="product-button">
+                            Подробнее
+                        </a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-picture">🧰</div>
+                    <div class="product-info">
+                        <span class="product-category">Инструменты</span>
+                        <h3>Набор инструментов</h3>
+                        <p class="price">4 290 ₽</p>
+                        <a href="product.html" class="product-button">
+                            Подробнее
+                        </a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-picture">💡</div>
+                    <div class="product-info">
+                        <span class="product-category">Освещение</span>
+                        <h3>Автомобильные LED-лампы</h3>
+                        <p class="price">1 890 ₽</p>
+                        <a href="product.html" class="product-button">
+                            Подробнее
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="container section-block">
+            <div class="benefits">
+                <article>
+                    <h3>✓ Большой ассортимент</h3>
+                    <p>Автомобильные товары разных категорий.</p>
+                </article>
+                <article>
+                    <h3>✓ Удобный выбор</h3>
+                    <p>Простой каталог и подробное описание товаров.</p>
+                </article>
+                <article>
+                    <h3>✓ Поддержка клиентов</h3>
+                    <p>Возможность связаться с магазином через форму.</p>
+                </article>
+            </div>
+        </div>
+</main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 AutoDrive. Учебный интернет-магазин.</p>
+            <small>Лабораторная работа №2 — WEB-программирование</small>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакты и форма обратной связи учебного автомагазина AutoDrive.">
+    <title>Контакты — AutoDrive</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                AUTO<span>DRIVE</span>
+            </a>
+
+            <form class="search-form" action="catalog.html" method="get" role="search">
+                <input type="search" name="q"
+                       placeholder="Поиск товаров..."
+                       aria-label="Поиск товаров">
+                <button type="submit">Найти</button>
+            </form>
+
+            <a class="cart-link" href="cart.html">🛒 Корзина</a>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+        <div class="container nav-content">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="product.html">Товар</a>
+            <a href="cart.html">Корзина</a>
+            <a href="contact.html" class="active">Контакты</a>
+        </div>
+    </nav>
+
+    <main class="container contact-page">
+        <section class="contact-heading">
+            <h1>Свяжитесь с нами</h1>
+            <p>
+                У вас есть вопросы по товарам или предложения?
+                Заполните форму обратной связи.
+            </p>
+        </section>
+
+        <div class="contact-layout">
+            <section class="contact-form-card">
+                <h2>Форма обратной связи</h2>
+
+                <form action="#" method="get" class="contact-form">
+                    <fieldset>
+                        <legend>Контактные данные</legend>
+
+                        <div class="contact-form-group">
+                            <label for="contact-name">Ваше имя *</label>
+                            <input type="text"
+                                   id="contact-name"
+                                   name="name"
+                                   placeholder="Введите имя"
+                                   minlength="2"
+                                   maxlength="50"
+                                   pattern="[А-Яа-яЁёA-Za-z -]{2,50}"
+                                   title="От 2 до 50 букв, пробелы и дефисы"
+                                   autocomplete="name"
+                                   required>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email"
+                                   id="contact-email"
+                                   name="email"
+                                   placeholder="example@mail.com"
+                                   autocomplete="email"
+                                   required>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contact-phone">Телефон</label>
+                            <input type="tel"
+                                   id="contact-phone"
+                                   name="phone"
+                                   placeholder="+7 999 123-45-67"
+                                   pattern="\+?[0-9 ()-]{10,20}"
+                                   title="Введите номер телефона от 10 до 20 символов">
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contact-topic">Тема обращения *</label>
+                            <select id="contact-topic" name="topic" required>
+                                <option value="" disabled selected>Выберите тему</option>
+                                <option value="product">Вопрос о товаре</option>
+                                <option value="delivery">Доставка</option>
+                                <option value="suggestion">Предложение</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label for="contact-message">Сообщение *</label>
+                            <textarea id="contact-message"
+                                      name="message"
+                                      rows="6"
+                                      minlength="10"
+                                      maxlength="1000"
+                                      placeholder="Напишите ваше сообщение..."
+                                      required></textarea>
+                        </div>
+
+                        <div class="contact-form-group">
+                            <label class="contact-agreement">
+                                <input type="checkbox" name="agreement" required>
+                                Я согласен на обработку введённых данных *
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="contact-submit">
+                                Отправить сообщение
+                            </button>
+
+                            <button type="reset" class="contact-reset">
+                                Очистить
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <p class="contact-disclaimer">
+                    Форма демонстрационная. Сообщения не отправляются
+                    и не сохраняются на сервере.
+                </p>
+            </section>
+
+            <aside class="contact-information">
+                <h2>Информация о магазине</h2>
+
+                <div class="contact-info-block">
+                    <h3>AutoDrive</h3>
+                    <p>
+                        Учебный интернет-магазин автомобильных
+                        запчастей, инструментов и аксессуаров.
+                    </p>
+                </div>
+
+                <div class="contact-info-block">
+                    <h3>Ассортимент</h3>
+                    <p>
+                        Аккумуляторы, масла, шины, инструменты,
+                        освещение и товары для ухода за автомобилем.
+                    </p>
+                </div>
+
+                <div class="contact-info-block">
+                    <h3>Режим работы</h3>
+                    <p>
+                        Демонстрационный проект.
+                        Реальный магазин отсутствует.
+                    </p>
+                </div>
+
+                <div class="contact-info-block">
+                    <h3>Навигация</h3>
+                    <p>
+                        <a href="catalog.html">Перейти в каталог товаров</a>
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 AutoDrive. Учебный интернет-магазин.</p>
+            <small>Лабораторная работа №2 — WEB-программирование</small>
+        </div>
+    </footer>
+
+</body>
+</html>

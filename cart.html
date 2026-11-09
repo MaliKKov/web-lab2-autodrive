@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Корзина покупателя интернет-магазина AutoDrive.">
+    <title>Корзина — AutoDrive</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                AUTO<span>DRIVE</span>
+            </a>
+
+            <form class="search-form" action="catalog.html" method="get" role="search">
+                <input type="search" name="q"
+                       placeholder="Поиск товаров..."
+                       aria-label="Поиск товаров">
+                <button type="submit">Найти</button>
+            </form>
+
+            <a class="cart-link" href="cart.html">🛒 Корзина</a>
+        </div>
+    </header>
+
+    <nav class="main-nav" aria-label="Основная навигация">
+        <div class="container nav-content">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="product.html">Товар</a>
+            <a href="cart.html" class="active">Корзина</a>
+            <a href="contact.html">Контакты</a>
+        </div>
+    </nav>
+
+    <main class="container cart-page">
+        <h1>Корзина покупателя</h1>
+
+        <p class="cart-intro">
+            Проверьте выбранные товары перед оформлением заказа.
+        </p>
+
+        <div class="cart-layout">
+
+            <section class="cart-items">
+                <h2>Товары в корзине</h2>
+
+                <article class="cart-item">
+                    <div class="cart-item-picture">🔋</div>
+
+                    <div class="cart-item-info">
+                        <h3>Автомобильный аккумулятор 60 А·ч</h3>
+                        <p>Электрика</p>
+                        <span class="cart-item-price">6 990 ₽</span>
+                    </div>
+
+                    <div class="cart-item-quantity">
+                        <label for="cart-quantity-1">Количество</label>
+                        <input type="number"
+                               id="cart-quantity-1"
+                               min="1"
+                               max="10"
+                               value="1">
+                    </div>
+                </article>
+
+                <article class="cart-item">
+                    <div class="cart-item-picture">🛢️</div>
+
+                    <div class="cart-item-info">
+                        <h3>Моторное масло 5W-30</h3>
+                        <p>Масла и жидкости</p>
+                        <span class="cart-item-price">3 490 ₽</span>
+                    </div>
+
+                    <div class="cart-item-quantity">
+                        <label for="cart-quantity-2">Количество</label>
+                        <input type="number"
+                               id="cart-quantity-2"
+                               min="1"
+                               max="10"
+                               value="1">
+                    </div>
+                </article>
+
+                <a href="catalog.html" class="continue-shopping">
+                    ← Продолжить покупки
+                </a>
+            </section>
+
+            <aside class="order-summary">
+                <h2>Ваш заказ</h2>
+
+                <div class="summary-row">
+                    <span>Товары (2 шт.)</span>
+                    <span>10 480 ₽</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Доставка</span>
+                    <span>Не рассчитывается</span>
+                </div>
+
+                <div class="summary-row total-row">
+                    <strong>Итого</strong>
+                    <strong>10 480 ₽</strong>
+                </div>
+
+                <a href="contact.html" class="checkout-button">
+                    Оформить заказ
+                </a>
+
+                <p class="order-note">
+                    Это учебный интернет-магазин.
+                    Заказы не обрабатываются,
+                    оплата не производится.
+                </p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 AutoDrive. Учебный интернет-магазин.</p>
+            <small>Лабораторная работа №2 — WEB-программирование</small>
+        </div>
+    </footer>
+
+</body>
+</html>
